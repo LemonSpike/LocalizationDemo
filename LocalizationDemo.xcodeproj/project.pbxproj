@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6C86F41DB28BD700F96F64 /* translations.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E6C86F61DB28BD700F96F64 /* translations.strings */; };
 		549B2FAE1D57221A008FB941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B2FAD1D57221A008FB941 /* AppDelegate.swift */; };
 		549B2FB01D57221A008FB941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B2FAF1D57221A008FB941 /* ViewController.swift */; };
 		549B2FB31D57221A008FB941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549B2FB11D57221A008FB941 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E6C86EB1DB2842C00F96F64 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		4E6C86EC1DB2842C00F96F64 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4E6C86F51DB28BD700F96F64 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/translations.strings; sourceTree = "<group>"; };
 		549B2FAA1D57221A008FB941 /* LocalizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		549B2FAD1D57221A008FB941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		549B2FAF1D57221A008FB941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			children = (
 				549B2FAD1D57221A008FB941 /* AppDelegate.swift */,
 				549B2FAF1D57221A008FB941 /* ViewController.swift */,
+				4E6C86F61DB28BD700F96F64 /* translations.strings */,
 				549B2FB11D57221A008FB941 /* Main.storyboard */,
 				549B2FB41D57221A008FB941 /* Assets.xcassets */,
 				549B2FB61D57221A008FB941 /* LaunchScreen.storyboard */,
@@ -96,6 +101,7 @@
 				TargetAttributes = {
 					549B2FA91D57221A008FB941 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -124,6 +130,7 @@
 			files = (
 				549B2FB81D57221A008FB941 /* LaunchScreen.storyboard in Resources */,
 				549B2FB51D57221A008FB941 /* Assets.xcassets in Resources */,
+				4E6C86F41DB28BD700F96F64 /* translations.strings in Resources */,
 				549B2FB31D57221A008FB941 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +150,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4E6C86F61DB28BD700F96F64 /* translations.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E6C86F51DB28BD700F96F64 /* de */,
+			);
+			name = translations.strings;
+			sourceTree = "<group>";
+		};
 		549B2FB11D57221A008FB941 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				549B2FB21D57221A008FB941 /* Base */,
+				4E6C86EB1DB2842C00F96F64 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,6 +171,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				549B2FB71D57221A008FB941 /* Base */,
+				4E6C86EC1DB2842C00F96F64 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -211,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -253,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.careerfoundry.LocalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.careerfoundry.LocalizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
